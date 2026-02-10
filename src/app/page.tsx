@@ -75,12 +75,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-dark to-[#2d2b5e]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#6C63FF] via-[#5957a4] to-[#1a1a5e] animate-hero-gradient" style={{ backgroundSize: "200% 200%" }} />
         <div
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 20% 50%, rgba(201,169,110,0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.15) 0%, transparent 40%), radial-gradient(circle at 60% 80%, rgba(201,169,110,0.2) 0%, transparent 45%)",
+              "radial-gradient(circle at 20% 50%, rgba(201,169,110,0.35) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(108,99,255,0.2) 0%, transparent 40%), radial-gradient(circle at 60% 80%, rgba(201,169,110,0.15) 0%, transparent 45%)",
           }}
         />
 
@@ -351,7 +351,7 @@ export default function Home() {
                 Book a Consultation
               </Link>
               <a
-                href="tel:+447392721777"
+                href="tel:+447464335199"
                 className="flex items-center justify-center gap-2 px-8 py-4 border border-primary/20 text-primary uppercase tracking-wider text-sm rounded-full hover:bg-primary/5 transition-all"
               >
                 <Phone size={16} />

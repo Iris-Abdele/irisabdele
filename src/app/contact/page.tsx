@@ -85,7 +85,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <motion.a
-                href="tel:+447392721777"
+                href="tel:+447464335199"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm text-gray-400">Phone</p>
                   <p className="text-gray-700 font-medium group-hover:text-primary transition-colors">
-                    +44 (0)7392 721777
+                    +44 (0)7464 335199
                   </p>
                 </div>
               </motion.a>

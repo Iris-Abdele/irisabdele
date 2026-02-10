@@ -126,10 +126,10 @@ export default function Navbar() {
                   Book Now
                 </Link>
                 <a
-                  href="tel:+447392721777"
+                  href="tel:+447464335199"
                   className="flex items-center justify-center gap-2 text-gray-600"
                 >
-                  <Phone size={16} /> +44 (0)7392 721777
+                  <Phone size={16} /> +44 (0)7464 335199
                 </a>
               </div>
             </nav>

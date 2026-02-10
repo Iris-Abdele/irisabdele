@@ -14,6 +14,7 @@ const treatments = [
     price: "£90",
     duration: "Up to 90 minutes",
     highlight: true,
+    image: "/images/acupuncture-treatment.jpg",
   },
   {
     title: "Acupuncture Follow-Up",
@@ -22,6 +23,7 @@ const treatments = [
     price: "£70",
     duration: "Up to 60 minutes",
     highlight: false,
+    image: "/images/acupuncture-closeup.jpg",
   },
   {
     title: "Facial Massage",
@@ -30,6 +32,7 @@ const treatments = [
     price: "£55",
     duration: "30 minutes",
     highlight: false,
+    image: "/images/wellness-healing.jpg",
   },
   {
     title: "Cosmetic Acupuncture",
@@ -38,6 +41,7 @@ const treatments = [
     price: "Enquire",
     duration: "90 minutes",
     highlight: true,
+    image: "/images/treatment-room.jpeg",
   },
   {
     title: "Manual Lymphatic Drainage — Initial",
@@ -46,6 +50,7 @@ const treatments = [
     price: "£125",
     duration: "60 minutes",
     highlight: false,
+    image: "/images/cloud-calm.jpg",
   },
   {
     title: "Manual Lymphatic Drainage — Follow-Up",
@@ -54,6 +59,7 @@ const treatments = [
     price: "£85",
     duration: "60 minutes",
     highlight: false,
+    image: "/images/nature-leaves.jpg",
   },
 ];
 
@@ -76,47 +82,37 @@ export default function TreatmentsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`group relative rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${
-                  treatment.highlight
-                    ? "bg-gradient-to-br from-primary to-primary-dark text-white shadow-xl"
-                    : "bg-white border border-gray-100 shadow-sm"
-                }`}
+                className="group relative rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl shadow-lg min-h-[380px] flex flex-col"
               >
+                <Image
+                  src={treatment.image}
+                  alt={treatment.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className={`absolute inset-0 ${
+                  treatment.highlight
+                    ? "bg-gradient-to-b from-primary/70 via-primary-dark/80 to-primary-dark/90"
+                    : "bg-gradient-to-b from-black/40 via-black/55 to-black/75"
+                }`} />
                 {treatment.highlight && (
-                  <div className="absolute top-4 right-4 px-3 py-1 bg-accent text-white text-xs uppercase tracking-wider rounded-full">
+                  <div className="absolute top-4 right-4 z-10 px-3 py-1 bg-accent text-white text-xs uppercase tracking-wider rounded-full">
                     Popular
                   </div>
                 )}
-                <div className="p-8">
-                  <h3
-                    className={`text-xl font-semibold mb-4 ${
-                      treatment.highlight ? "text-white" : "text-gray-900"
-                    }`}
-                  >
+                <div className="relative p-8 flex flex-col flex-1 justify-end">
+                  <h3 className="text-xl font-semibold mb-3 text-white">
                     {treatment.title}
                   </h3>
-                  <p
-                    className={`text-sm leading-relaxed mb-6 ${
-                      treatment.highlight ? "text-white/80" : "text-gray-500"
-                    }`}
-                  >
+                  <p className="text-sm leading-relaxed mb-6 text-white/80">
                     {treatment.description}
                   </p>
-                  <div className="flex items-center justify-between pt-6 border-t border-white/20">
-                    <div>
-                      <p
-                        className={`text-2xl font-bold ${
-                          treatment.highlight ? "text-accent" : "text-primary"
-                        }`}
-                      >
-                        {treatment.price}
-                      </p>
-                    </div>
-                    <div
-                      className={`flex items-center gap-1.5 text-sm ${
-                        treatment.highlight ? "text-white/60" : "text-gray-400"
-                      }`}
-                    >
+                  <div className="flex items-center justify-between pt-4 border-t border-white/20">
+                    <p className="text-2xl font-bold text-accent">
+                      {treatment.price}
+                    </p>
+                    <div className="flex items-center gap-1.5 text-sm text-white/60">
                       <Clock size={14} />
                       {treatment.duration}
                     </div>
@@ -124,30 +120,6 @@ export default function TreatmentsPage() {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Treatment Imagery */}
-      <section className="px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
-          <div className="relative rounded-2xl overflow-hidden aspect-[3/2]">
-            <Image
-              src="/images/acupuncture-treatment.jpg"
-              alt="Acupuncture treatment session"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative rounded-2xl overflow-hidden aspect-[3/2]">
-            <Image
-              src="/images/acupuncture-closeup.jpg"
-              alt="Acupuncture needles close-up"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
           </div>
         </div>
       </section>

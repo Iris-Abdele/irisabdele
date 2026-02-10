@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -18,15 +17,6 @@ export default function Footer() {
               TCM Acupuncture, Manual Lymphatic Drainage &amp; Advanced Facial
               Treatments in Richmond, London.
             </p>
-            <div className="mt-4">
-              <Image
-                src="/images/signature.jpg"
-                alt="Iris Abdele signature"
-                width={120}
-                height={105}
-                className="opacity-70"
-              />
-            </div>
             <div className="flex gap-4 mt-6">
               <a
                 href="https://www.instagram.com/iris.abdele.acupuncture/"
@@ -36,15 +26,6 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
-              </a>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={18} />
               </a>
             </div>
           </div>
@@ -96,8 +77,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="flex-shrink-0 text-accent" />
-                <a href="tel:+447392721777" className="hover:text-white transition-colors">
-                  +44 (0)7392 721777
+                <a href="tel:+447464335199" className="hover:text-white transition-colors">
+                  +44 (0)7464 335199
                 </a>
               </li>
               <li className="flex items-center gap-3">
