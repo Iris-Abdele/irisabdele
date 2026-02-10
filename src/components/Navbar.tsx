@@ -36,57 +36,60 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-500 ${
-        scrolled ? "shadow-lg py-2" : "shadow-sm py-4"
+        scrolled ? "shadow-lg" : "shadow-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="group flex-shrink-0">
+      {/* Logo row */}
+      <div className={`flex items-center justify-center transition-all duration-500 ${
+        scrolled ? "py-2" : "py-5"
+      }`}>
+        <Link href="/">
           <Image
             src="/images/logo-ia.png"
             alt="Iris Abdele — Mind Body Skin"
-            width={180}
-            height={60}
-            className={`transition-all duration-500 ${scrolled ? "h-10 w-auto" : "h-14 w-auto"}`}
+            width={220}
+            height={73}
+            className={`transition-all duration-500 ${scrolled ? "h-12 w-auto" : "h-[70px] w-auto"}`}
             priority
           />
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`relative text-sm uppercase tracking-wider transition-colors duration-300 text-gray-700 hover:text-primary ${
-                pathname === link.href ? "font-bold" : "font-light"
-              }`}
-            >
-              {link.label}
-              {pathname === link.href && (
-                <motion.div
-                  layoutId="activeNav"
-                  className="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent"
-                />
-              )}
-            </Link>
-          ))}
-          <Link
-            href="/contact"
-            className="ml-4 px-6 py-2.5 bg-primary text-white text-sm uppercase tracking-wider rounded-full hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
-          >
-            Book Now
-          </Link>
-        </nav>
-
-        {/* Mobile toggle */}
+        {/* Mobile toggle — absolute right */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden p-2 text-primary"
+          className="lg:hidden absolute right-6 p-2 text-primary"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
+
+      {/* Desktop nav row */}
+      <nav className="hidden lg:flex items-center justify-center gap-8 border-t border-gray-100 py-3">
+        {navLinks.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`relative text-sm uppercase tracking-wider transition-colors duration-300 text-gray-700 hover:text-primary ${
+              pathname === link.href ? "font-bold" : "font-light"
+            }`}
+          >
+            {link.label}
+            {pathname === link.href && (
+              <motion.div
+                layoutId="activeNav"
+                className="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent"
+              />
+            )}
+          </Link>
+        ))}
+        <Link
+          href="/contact"
+          className="ml-4 px-6 py-2 bg-primary text-white text-sm uppercase tracking-wider rounded-full hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
+        >
+          Book Now
+        </Link>
+      </nav>
 
       {/* Mobile Menu */}
       <AnimatePresence>

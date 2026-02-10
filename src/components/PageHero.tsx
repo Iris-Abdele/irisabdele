@@ -9,7 +9,7 @@ interface PageHeroProps {
 
 export default function PageHero({ title, subtitle }: PageHeroProps) {
   return (
-    <section className="relative h-[45vh] min-h-[340px] flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative h-[45vh] min-h-[340px] flex items-center justify-center overflow-hidden pt-36">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-dark to-primary" />
       <div className="absolute inset-0 opacity-10">
