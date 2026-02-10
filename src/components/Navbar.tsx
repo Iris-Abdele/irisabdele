@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
@@ -34,22 +35,20 @@ export default function Navbar() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg py-3"
-          : "bg-transparent py-5"
+      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-500 ${
+        scrolled ? "shadow-lg py-2" : "shadow-sm py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="group">
-          <h1 className="text-2xl font-light tracking-widest uppercase" style={{ fontFamily: "'Bodoni Moda', serif" }}>
-            <span className={`transition-colors duration-300 ${scrolled ? "text-primary" : "text-white"}`}>
-              Iris
-            </span>
-            <span className={`font-bold transition-colors duration-300 ${scrolled ? "text-accent" : "text-accent"}`}>
-              {" "}Abdele
-            </span>
-          </h1>
+        <Link href="/" className="group flex-shrink-0">
+          <Image
+            src="/images/logo-ia.png"
+            alt="Iris Abdele — Mind Body Skin"
+            width={180}
+            height={60}
+            className={`transition-all duration-500 ${scrolled ? "h-10 w-auto" : "h-14 w-auto"}`}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -58,9 +57,9 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`relative text-sm uppercase tracking-wider transition-colors duration-300 ${
-                scrolled ? "text-gray-700 hover:text-primary" : "text-white/90 hover:text-white"
-              } ${pathname === link.href ? "font-bold" : "font-light"}`}
+              className={`relative text-sm uppercase tracking-wider transition-colors duration-300 text-gray-700 hover:text-primary ${
+                pathname === link.href ? "font-bold" : "font-light"
+              }`}
             >
               {link.label}
               {pathname === link.href && (
@@ -82,7 +81,7 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`lg:hidden p-2 transition-colors ${scrolled ? "text-primary" : "text-white"}`}
+          className="lg:hidden p-2 text-primary"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -96,7 +95,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white/98 backdrop-blur-xl border-t border-gray-100"
+            className="lg:hidden bg-white border-t border-gray-100"
           >
             <nav className="max-w-7xl mx-auto px-6 py-8 flex flex-col gap-4">
               {navLinks.map((link, i) => (

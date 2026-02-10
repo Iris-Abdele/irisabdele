@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#6C63FF] via-[#5957a4] to-[#1a1a5e] animate-hero-gradient" style={{ backgroundSize: "200% 200%" }} />
         <div

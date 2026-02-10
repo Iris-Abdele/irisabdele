@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -10,9 +11,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h2 className="text-2xl font-light tracking-widest uppercase mb-4" style={{ fontFamily: "'Bodoni Moda', serif" }}>
-              Iris <span className="font-bold text-accent">Abdele</span>
-            </h2>
+            <Image
+              src="/images/logo-ia.png"
+              alt="Iris Abdele — Mind Body Skin"
+              width={160}
+              height={53}
+              className="h-12 w-auto brightness-0 invert mb-2"
+            />
             <p className="text-white/70 text-sm leading-relaxed">
               TCM Acupuncture, Manual Lymphatic Drainage &amp; Advanced Facial
               Treatments in Richmond, London.
