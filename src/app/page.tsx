@@ -336,7 +336,7 @@ export default function Home() {
                 Call Me
               </a>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 flex items-center gap-4">
               <a
                 href="https://www.instagram.com/iris.abdele.acupuncture/"
                 target="_blank"
@@ -346,6 +346,18 @@ export default function Home() {
                 <Instagram size={16} />
                 Follow @iris.abdele.acupuncture
               </a>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="16" height="16">
+                <defs>
+                  <clipPath id="yin-yang-circle">
+                    <circle cx="32" cy="32" r="30"/>
+                  </clipPath>
+                </defs>
+                <circle cx="32" cy="32" r="30" fill="#1a5f9e"/>
+                <path d="M32,2 A30,30 0 0,1 32,62 A15,15 0 0,1 32,32 A15,15 0 0,0 32,2 Z" fill="#2d1b69" clipPath="url(#yin-yang-circle)"/>
+                <circle cx="32" cy="47" r="5" fill="#1a5f9e"/>
+                <circle cx="32" cy="17" r="5" fill="#2d1b69"/>
+                <circle cx="32" cy="32" r="30" fill="none" stroke="#0a1628" strokeWidth="2"/>
+              </svg>
             </div>
           </motion.div>
         </div>
