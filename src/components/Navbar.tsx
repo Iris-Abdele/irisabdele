@@ -38,7 +38,7 @@ export default function Navbar() {
             alt="Iris Abdele — Mind Body Skin"
             width={1200}
             height={400}
-            className="h-80 w-auto"
+            className="h-40 w-auto"
             priority
           />
         </Link>
