@@ -36,9 +36,9 @@ export default function Navbar() {
           <Image
             src="/images/logo-ia.png"
             alt="Iris Abdele — Mind Body Skin"
-            width={400}
-            height={120}
-            className="h-20 w-auto"
+            width={1200}
+            height={400}
+            className="h-80 w-auto"
             priority
           />
         </Link>
