@@ -87,9 +87,14 @@ export default function Footer() {
               <li>Clapham</li>
               <li>Sutton</li>
             </ul>
+          </div>
 
-            {/* Accreditation Logos */}
-            <div className="flex flex-col gap-4 mt-6">
+          {/* Accreditation Logos */}
+          <div>
+            <h3 className="text-accent font-semibold uppercase tracking-wider text-sm mb-4">
+              Accreditations
+            </h3>
+            <div className="flex flex-col gap-4">
               <div className="bg-white rounded-md px-3 py-2 w-fit">
                 <Image
                   src="/images/bacc-member.png"
@@ -104,14 +109,14 @@ export default function Footer() {
                 alt="Professional Standards Authority — Accredited Register"
                 width={200}
                 height={80}
-                className="h-10 w-auto"
+                className="h-8 w-auto"
               />
               <Image
                 src="/images/dr-vodder-uk.webp"
                 alt="Dr. Vodder School UK"
                 width={200}
                 height={200}
-                className="h-12 w-auto"
+                className="h-8 w-auto"
               />
             </div>
           </div>

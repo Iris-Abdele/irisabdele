@@ -51,7 +51,7 @@ const treatments = [
     duration: "60 minutes",
     highlight: false,
     image: "/images/mld-followup.webp",
-    imageClass: "-scale-x-100 hue-rotate-15",
+    imageClass: "-scale-x-100 hue-rotate-15 blur-[1px] brightness-90",
   },
   {
     title: "Manual Lymphatic Drainage — Follow-Up",
@@ -61,6 +61,7 @@ const treatments = [
     duration: "60 minutes",
     highlight: false,
     image: "/images/mld-followup.webp",
+    imageClass: "blur-[1px] brightness-90",
   },
 ];
 
