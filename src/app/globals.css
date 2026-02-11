@@ -90,8 +90,6 @@ html {
 /* Night sky effect */
 .night-sky {
   background: linear-gradient(180deg, #050d1a 0%, #0a1628 30%, #0e1f3d 60%, #091428 100%);
-  position: relative;
-  overflow: hidden;
 }
 .night-sky::before {
   content: "";
