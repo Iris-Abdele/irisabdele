@@ -37,16 +37,16 @@ const services = [
     title: "Mental Wellbeing",
     description:
       "Holistic treatment for anxiety, stress, insomnia, fatigue, brain fog, and immune system support.",
-    color: "from-blue-50 to-indigo-50",
-    iconColor: "text-blue-500",
+    color: "from-blue-100 to-sky-100",
+    iconColor: "text-blue-600",
   },
   {
     icon: Leaf,
     title: "Digestive Health",
     description:
       "Natural relief for IBS symptoms, constipation, diarrhoea, nausea, and other digestive concerns.",
-    color: "from-emerald-50 to-green-50",
-    iconColor: "text-emerald-500",
+    color: "from-emerald-100 to-teal-100",
+    iconColor: "text-emerald-600",
   },
 ];
 
