@@ -23,6 +23,17 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Protect images from copying */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
+a img, button img {
+  pointer-events: auto;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
