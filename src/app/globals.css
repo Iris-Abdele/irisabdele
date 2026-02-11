@@ -87,6 +87,73 @@ html {
   pointer-events: none;
 }
 
+/* Night sky effect */
+.night-sky {
+  background: linear-gradient(180deg, #050d1a 0%, #0a1628 30%, #0e1f3d 60%, #091428 100%);
+  position: relative;
+  overflow: hidden;
+}
+.night-sky::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 25% 20%, rgba(30,60,120,0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, rgba(20,50,100,0.15) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 85%, rgba(25,45,90,0.12) 0%, transparent 40%);
+  pointer-events: none;
+}
+.night-sky::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 5% 8%, #fff 50%, transparent 50%),
+    radial-gradient(1px 1px at 12% 45%, #fff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 18% 22%, #fff 50%, transparent 50%),
+    radial-gradient(1px 1px at 24% 72%, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(1px 1px at 30% 12%, #fff 50%, transparent 50%),
+    radial-gradient(2px 2px at 35% 55%, rgba(255,255,255,0.9) 50%, transparent 50%),
+    radial-gradient(1px 1px at 42% 35%, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(1px 1px at 48% 82%, #fff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 55% 18%, rgba(255,255,255,0.85) 50%, transparent 50%),
+    radial-gradient(1px 1px at 60% 65%, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(1px 1px at 67% 40%, #fff 50%, transparent 50%),
+    radial-gradient(2px 2px at 72% 10%, rgba(255,255,255,0.9) 50%, transparent 50%),
+    radial-gradient(1px 1px at 78% 58%, rgba(255,255,255,0.75) 50%, transparent 50%),
+    radial-gradient(1px 1px at 83% 30%, #fff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 88% 75%, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(1px 1px at 93% 48%, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(1px 1px at 8% 90%, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 15% 62%, rgba(255,255,255,0.85) 50%, transparent 50%),
+    radial-gradient(1px 1px at 22% 38%, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(2px 2px at 28% 88%, rgba(255,255,255,0.9) 50%, transparent 50%),
+    radial-gradient(1px 1px at 38% 5%, #fff 50%, transparent 50%),
+    radial-gradient(1px 1px at 45% 52%, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 52% 92%, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(1px 1px at 58% 28%, rgba(255,255,255,0.75) 50%, transparent 50%),
+    radial-gradient(1px 1px at 65% 78%, #fff 50%, transparent 50%),
+    radial-gradient(1px 1px at 75% 42%, rgba(255,255,255,0.65) 50%, transparent 50%),
+    radial-gradient(2px 2px at 80% 88%, rgba(255,255,255,0.9) 50%, transparent 50%),
+    radial-gradient(1px 1px at 90% 15%, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(1px 1px at 96% 68%, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 3% 55%, rgba(255,255,255,0.85) 50%, transparent 50%),
+    radial-gradient(1px 1px at 33% 95%, #fff 50%, transparent 50%),
+    radial-gradient(1px 1px at 70% 25%, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(1px 1px at 50% 48%, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 85% 52%, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(1px 1px at 40% 68%, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(1px 1px at 62% 8%, rgba(255,255,255,0.9) 50%, transparent 50%);
+  pointer-events: none;
+  animation: twinkle 5s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
 /* Glass effect */
 .glass {
   background: rgba(255, 255, 255, 0.8);
