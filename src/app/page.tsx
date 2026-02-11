@@ -72,7 +72,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[240px]">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[240px] pb-24">
         {/* Night sky background */}
         <div className="absolute inset-0 night-sky" />
 
