@@ -6,7 +6,7 @@ import PageHero from "@/components/PageHero";
 import { MapPin, Clock, Train, Car, Mail } from "lucide-react";
 
 const hours = [
-  { day: "Tuesday", time: "10:00 am — 4:00 pm" },
+  { day: "Wednesday", time: "10:00 am — 4:00 pm" },
   { day: "Thursday", time: "10:00 am — 7:00 pm" },
   { day: "Sunday", time: "10:00 am — 4:00 pm" },
 ];

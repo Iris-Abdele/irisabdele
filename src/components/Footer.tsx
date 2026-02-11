@@ -111,9 +111,9 @@ export default function Footer() {
           <Image
             src="/images/dr-vodder-uk.webp"
             alt="Dr. Vodder School UK"
-            width={120}
-            height={120}
-            className="h-12 w-auto"
+            width={200}
+            height={200}
+            className="h-16 w-auto"
           />
         </div>
 
