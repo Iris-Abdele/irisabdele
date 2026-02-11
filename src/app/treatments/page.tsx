@@ -53,8 +53,8 @@ const treatments = [
     duration: "60 minutes",
     highlight: false,
     image: "/images/mld-followup.webp",
-    imageClass: "-scale-x-100 hue-rotate-15 scale-110 saturate-[0.4] brightness-75",
-    overlay: "bg-gradient-to-b from-black/55 via-black/65 to-black/80",
+    imageClass: "-scale-x-100 hue-rotate-15 scale-110 brightness-50",
+    overlay: "bg-gradient-to-b from-[#2a1560]/60 via-[#1e1050]/70 to-[#150d3a]/85",
   },
   {
     title: "Manual Lymphatic Drainage — Follow-Up",
@@ -64,8 +64,8 @@ const treatments = [
     duration: "60 minutes",
     highlight: false,
     image: "/images/mld-followup.webp",
-    imageClass: "scale-110 saturate-[0.4] brightness-75",
-    overlay: "bg-gradient-to-b from-black/55 via-black/65 to-black/80",
+    imageClass: "scale-110 brightness-50",
+    overlay: "bg-gradient-to-b from-[#2a1560]/60 via-[#1e1050]/70 to-[#150d3a]/85",
   },
 ];
 
