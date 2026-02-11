@@ -211,7 +211,7 @@ export default function Home() {
             <div className="relative">
               <div className="w-full aspect-[4/5] rounded-2xl overflow-hidden relative">
                 <Image
-                  src="/images/iris-portrait-bw.webp"
+                  src="/images/iris-portrait.jpeg"
                   alt="Iris Abdele — Acupuncturist & Advanced Facialist"
                   fill
                   className="object-cover"
