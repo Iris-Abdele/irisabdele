@@ -59,7 +59,7 @@ const treatments = [
     price: "£85",
     duration: "60 minutes",
     highlight: false,
-    image: "/images/nature-leaves.jpg",
+    image: "/images/mld-followup.webp",
   },
 ];
 
