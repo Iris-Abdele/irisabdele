@@ -157,7 +157,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 night-sky text-center relative overflow-hidden">
+      <section className="py-6 px-6 night-sky text-center relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -165,12 +165,12 @@ export default function AboutPage() {
           className="max-w-2xl mx-auto"
         >
           <h2
-            className="text-3xl md:text-4xl font-light text-white mb-6"
+            className="text-2xl md:text-3xl font-light text-white mb-3"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Ready to Experience the Difference?
           </h2>
-          <p className="text-white/70 text-lg mb-10">
+          <p className="text-white/70 text-base mb-6">
             I would love to discuss how I can help you on your journey to better
             health and wellbeing.
           </p>
