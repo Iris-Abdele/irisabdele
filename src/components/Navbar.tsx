@@ -31,14 +31,14 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm"
     >
       {/* Logo row */}
-      <div className="flex items-center justify-center py-1">
+      <div className="flex items-center justify-center">
         <Link href="/">
           <Image
             src="/images/logo-ia.png"
             alt="Iris Abdele — Mind Body Skin"
             width={1200}
             height={400}
-            className="h-48 w-auto"
+            className="h-56 w-auto"
             priority
           />
         </Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
       </div>
 
       {/* Desktop nav row */}
-      <nav className="hidden lg:flex items-center justify-center gap-8 border-t border-gray-100 py-2">
+      <nav className="hidden lg:flex items-center justify-center gap-8 border-t border-gray-100 py-1">
         {navLinks.map((link) => (
           <Link
             key={link.href}
