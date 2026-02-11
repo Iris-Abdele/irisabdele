@@ -10,8 +10,6 @@ const locations = [
     name: "Richmond",
     address: "50 Hill Rise, Richmond, London",
     hours: [
-      { day: "Wednesday", time: "10:00 am — 4:00 pm" },
-      { day: "Thursday", time: "10:00 am — 7:00 pm" },
       { day: "Sunday", time: "10:00 am — 4:00 pm" },
     ],
     transport:
