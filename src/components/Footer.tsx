@@ -97,21 +97,21 @@ export default function Footer() {
             alt="British Acupuncture Council Member"
             width={200}
             height={80}
-            className="h-12 w-auto brightness-0 invert opacity-80"
+            className="h-12 w-auto"
           />
           <Image
             src="/images/psa-accredited.webp"
             alt="Professional Standards Authority — Accredited Register"
             width={200}
             height={80}
-            className="h-12 w-auto brightness-0 invert opacity-80"
+            className="h-12 w-auto"
           />
           <Image
             src="/images/dr-vodder-uk.webp"
             alt="Dr. Vodder School UK"
             width={200}
             height={80}
-            className="h-12 w-auto brightness-0 invert opacity-80"
+            className="h-12 w-auto"
           />
         </div>
 
