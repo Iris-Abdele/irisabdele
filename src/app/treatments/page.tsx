@@ -89,7 +89,7 @@ export default function TreatmentsPage() {
                   src={treatment.image}
                   alt={treatment.title}
                   fill
-                  className={`object-cover transition-transform duration-700 group-hover:scale-105 ${(treatment as any).imageClass || ""}`}
+                  className={`object-cover ${(treatment as any).imageClass || "transition-transform duration-700 group-hover:scale-105"}`}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <div className={`absolute inset-0 ${
