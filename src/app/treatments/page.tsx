@@ -96,11 +96,6 @@ export default function TreatmentsPage() {
                     ? "bg-gradient-to-b from-primary/70 via-primary-dark/80 to-primary-dark/90"
                     : "bg-gradient-to-b from-black/40 via-black/55 to-black/75"
                 }`} />
-                {treatment.highlight && (
-                  <div className="absolute top-4 right-4 z-10 px-3 py-1 bg-accent text-white text-xs uppercase tracking-wider rounded-full">
-                    Popular
-                  </div>
-                )}
                 <div className="relative p-8 flex flex-col flex-1 justify-end">
                   <h3 className="text-xl font-semibold mb-3 text-white">
                     {treatment.title}
@@ -109,7 +104,7 @@ export default function TreatmentsPage() {
                     {treatment.description}
                   </p>
                   <div className="flex items-center justify-between pt-4 border-t border-white/20">
-                    <p className="text-2xl font-bold text-accent">
+                    <p className="text-2xl font-bold text-white">
                       {treatment.price}
                     </p>
                     <div className="flex items-center gap-1.5 text-sm text-white/60">
