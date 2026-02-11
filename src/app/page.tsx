@@ -74,16 +74,8 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[240px]">
-        {/* Background */}
-        <div className="absolute inset-0 stained-glass" />
-        <div className="absolute inset-0 animate-hero-gradient" style={{ backgroundSize: "200% 200%", background: "linear-gradient(135deg, rgba(59,56,128,0.3) 0%, rgba(26,95,158,0.2) 50%, rgba(42,39,96,0.3) 100%)" }} />
-        <div
-          className="absolute inset-0 opacity-25"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 20% 50%, rgba(26,95,158,0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(90,87,176,0.3) 0%, transparent 40%), radial-gradient(circle at 60% 80%, rgba(40,120,194,0.25) 0%, transparent 45%)",
-          }}
-        />
+        {/* Background — deep midnight blue */}
+        <div className="absolute inset-0 bg-[#0a1628]" />
 
         {/* Decorative elements */}
         <div className="absolute top-20 right-20 w-96 h-96 rounded-full border border-white/5 animate-float" />
