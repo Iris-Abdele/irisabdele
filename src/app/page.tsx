@@ -264,7 +264,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 px-6 stained-glass relative overflow-hidden">
+      <section className="py-24 px-6 night-sky relative overflow-hidden">
 
         <div className="max-w-7xl mx-auto relative">
           <SectionHeading
