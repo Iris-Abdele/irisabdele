@@ -53,7 +53,8 @@ const treatments = [
     duration: "60 minutes",
     highlight: false,
     image: "/images/mld-followup.webp",
-    imageClass: "-scale-x-100 hue-rotate-15 blur-[2px] brightness-75",
+    imageClass: "-scale-x-100 hue-rotate-15 scale-110 saturate-[0.4] brightness-75",
+    overlay: "bg-gradient-to-b from-black/55 via-black/65 to-black/80",
   },
   {
     title: "Manual Lymphatic Drainage — Follow-Up",
@@ -63,7 +64,8 @@ const treatments = [
     duration: "60 minutes",
     highlight: false,
     image: "/images/mld-followup.webp",
-    imageClass: "blur-[2px] brightness-75",
+    imageClass: "scale-110 saturate-[0.4] brightness-75",
+    overlay: "bg-gradient-to-b from-black/55 via-black/65 to-black/80",
   },
 ];
 
@@ -95,9 +97,11 @@ export default function TreatmentsPage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <div className={`absolute inset-0 ${
-                  treatment.highlight
-                    ? "bg-gradient-to-b from-primary/70 via-primary-dark/80 to-primary-dark/90"
-                    : "bg-gradient-to-b from-black/40 via-black/55 to-black/75"
+                  (treatment as any).overlay
+                    ? (treatment as any).overlay
+                    : treatment.highlight
+                      ? "bg-gradient-to-b from-primary/70 via-primary-dark/80 to-primary-dark/90"
+                      : "bg-gradient-to-b from-black/40 via-black/55 to-black/75"
                 }`} />
                 <div className="relative p-8 flex flex-col flex-1 justify-end">
                   <h3 className="text-xl font-semibold mb-3 text-white">
