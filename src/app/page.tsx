@@ -207,6 +207,7 @@ export default function Home() {
                   priority
                 />
                 <div className="absolute inset-0 bg-pink-400/30 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-white/20 backdrop-blur-[1px]" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-2xl -z-10" />
               <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-primary/10 rounded-2xl -z-10" />
